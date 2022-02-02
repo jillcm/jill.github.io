@@ -4,22 +4,31 @@
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>PSHS-CLC KHUB</title>
-				<link rel="preconnect" href="https://fonts.googleapis.com">
-				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-				<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Crete+Round&family=Fira+Sans&family=Mukta&family=Nunito+Sans:wght@800&family=Work+Sans&display=swap" rel="stylesheet">
-			<style>
+			<script src="https://kit.fontawesome.com/374a8d26ef.js" crossorigin="anonymous"></script>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+				<style>
 				* {
 					box-sizing: border-box;
 				}
 				body {
 					margin: 15px;
 				}
+				#nav {
+					float: left;
+					width: 20%;
+					height: 100%;
+				}
 				ul {
+					float: left;
+					width: 20%;
+					height: 100%;
 					text-align: left;
 					text-decoration: none;
 					text-transform: uppercase;
 					background-color: #2d3443;
-					font-family: 'Mukta', sans-serif;
+					font-family: 'Roboto Condensed', sans-serif;
 					font-size: 15px;
 					letter-spacing: 2px;
 					font-weight: 600;
@@ -39,6 +48,15 @@
 					padding: 15px 17px;
 					text-decoration: none;
 				}
+				p a {
+					color: black;
+					text-decoration: none;
+					margin-left: 30px;
+				}
+				p a:hover, p a:active {
+					background-color: #d4cbc5;
+					text-decoration: underline;
+				}
 				#header {
 					margin-top: 10px;
 					padding-left: 5px;
@@ -47,15 +65,12 @@
 					font-size: 35px;
 					background-color: #dacec7;
 				}	
-				#content-main {	
-					width: 100%;
+				#content-main {
+					width: 80%;
 					margin-top: 10px;
-					padding-left: 5px;
-					margin-right: 30px;
-					border-color: #dacec7;
-					font-size: 25px;
+					font-size: 20px;
 					background-color: #dacec7;
-					float: left;
+					font-family: 'Oswald', sans-serif;
 				}
 				article {
 					width: 50%;
@@ -71,62 +86,72 @@
 					background-color: #dacec7;
 				}
 				.column {
-					float: left;
-					width: 50%;
+					width: 40%;
 					padding: 10px;
 				}
 				.row:after {
 					content: "";
 					display: table;
 					clear: both;
+					width: 40%;
 				}
 				h1 {
 
 				}
 				h2 {
+					letter-spacing: 5px;
+				}
+				h3 {
+					font-size: 20px;
 					letter-spacing: 2px;
+					font-family: 'Roboto Condensed', sans-serif;
+					padding-left: 30px;
+				}
+				h4 {
+					font-size: 20px;
+					letter-spacing: 2px;
+					font-family: 'Roboto Condensed', sans-serif;
 				}
 				p {
-					font-size: 20px;
+					font-family: 'Roboto Condensed', sans-serif;
+					font-size: 17px;
+					letter-spacing: 1px;
+					text-align: left;
 				}
 			</style>
 		</head>
 			<body>
-				<div id="nav">
+				<div class="nav">
 					<ul>
-						<li><a href="index.html">Dashboard</a></li>
-						<li><a href="site.html">Site Home</a></li>
-						<li><a href="calendar.html">Calendar</a></li>
-						<li><a href="priv.html">Private Files</a></li>
-						<li><a href="course.html">My Courses</a></li>
+					 <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+					 <li><a href="sitehome.html"><i class="fas fa-home"></i> Site Home</a></li>
+					 <li><a href="csproj.html"><i class="fa-thin fa-book-open"></i>Grades</a></li>
 					</ul>
-				</div>
-				<div id="header">
-					<h1>Computer Science 3 - Grades</h1>
 				</div>
 				<div id="content">
 					<div id="content-main">
-						<h2>Overview Report</h2>
+						<h2>Overview Report - Student Name</h2>
 					</div>
 				</div>
+				<div id="content-side">
 				<div class="row">
 					<div class="column" style="background-color: #dacec7;">
-						<h2>Course name</h2>
-						<p>Biology 1</p>
-						<p>Chemistry 1</p>
-						<p>Computer Science 3</p>
-						<p>English 3</p>
-						<p>Filipino 3</p>
-						<p>Health 3</p>
-						<p>Mathematics 3</p>
-						<p>Physical Education 3</p>
-						<p>Physics 1</p>
-						<p>Social Science 3</p>
-						<p>Statistics 1</p>
-						<p>Values Education 3</p>
+						<h3>Subject Courses</h3>
+						<p><a href="bio.html">Biology 1</a></p>
+						<p><a href="chem.html">Chemistry 1</a></p>
+						<p><a href="cs.html">Computer Science 3</a></p>
+						<p><a href="eng.html">English 3</a></p>
+						<p><a href="fil.html">Filipino 3</a></p>
+						<p><a href="h.html">Health 3</a></p>
+						<p><a href="math.html">Mathematics 3</a></p>
+						<p><a href="pe,html">Physical Education 3</a></p>
+						<p><a href="ph.html">Physics 1</a></p>
+						<p><a href="ss.html">Social Science 3</a></p>
+						<p><a href="stats.html">Statistics 1</a></p>
+						<p><a href="ve.html">Values Education 3</a></p>
 					</div>
 					<div class="column" style="background-color: #dacec7;">
-						<h2>Grades</h2>
+						<h4>Grades</h4>
 						<p>-</p>
 						<p>-</p>
 						<p>-</p>
@@ -140,6 +165,7 @@
 						<p>-</p>
 						<p>-</p>
 					</div>
+				</div>
 				</div>
 			</body>
 			</html>
